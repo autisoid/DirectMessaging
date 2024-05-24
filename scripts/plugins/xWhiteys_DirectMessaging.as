@@ -38,7 +38,7 @@ HookReturnCode HOOKED_ClientSay(SayParameters@ _Params) {
 		_Params.ShouldHide = true;
 		
 		if (args.ArgC() < 3) {
-			g_PlayerFuncs.SayText(_Params.GetPlayer(), "Usage: " + args[0] + " <receiver> <message> - Send a private message to somebody.\n");
+            g_PlayerFuncs.SayText(_Params.GetPlayer(), "Usage: " + args[0] + " <receiver> <message> - Send a private message to somebody.\n");
 		
 			return HOOK_CONTINUE;
 		}
